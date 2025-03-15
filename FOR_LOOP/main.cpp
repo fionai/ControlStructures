@@ -7,6 +7,7 @@ using namespace std;
 #define ASCII_KEYS //2 варианта ориентации
 
 
+
 void main()
 {
 	setlocale(LC_ALL, "");

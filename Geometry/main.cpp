@@ -45,6 +45,7 @@ void main()
 	}
 */
 
+	/*
 	for (int i = 0; i < n*2; i++)
 	{
 		if (i < n)
@@ -68,7 +69,20 @@ void main()
 
 		cout << endl;
 	}
-
-
+	*/
+	for (int i = 0; i < n*2; i++)
+	{
+		for (int j = 0; j < n*2; j++)
+		{
+			if (i == (j+n) || j == (i+n))
+				cout << "\\";
+			//else if (i == (n-j-1) || i == (n*3 - j-1))
+			else if (i == (n - j - 1) || (i-n) == (n * 2 - j - 1))  //одно и то же
+				cout << "/";
+			else
+				cout << " ";
+		}
+		cout << endl;
+}
 
 }
